@@ -7,8 +7,9 @@
 
 body {
     background-image: url("./photo-1516912481808-3406841bd33c.jfif");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    
     width: 100vw;
     height: 100vh;
     
@@ -64,6 +65,7 @@ body {
     padding: 30px;
     margin-top: 20px;
     /* background-color: aqua; */
+    opacity: 10;
 }
 .info div {
     font-size: 30px;

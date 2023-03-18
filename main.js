@@ -1,5 +1,3 @@
-console.log("hello world i am ahmed workingn from home ")
-
 
 const button = document.querySelector('#submit');
 button.addEventListener("click", e => {
@@ -9,6 +7,8 @@ button.addEventListener("click", e => {
         return
     }
     load();
+    const city = document.querySelector("#search")
+    city.value = "";
 })
 
 
@@ -33,6 +33,7 @@ function load () {
 const updateUi = (data) => {
     let d = new Date();
     let newDate = d.getMonth()+ 1 +'.'+ d.getDate()+'.'+ d.getFullYear();
+    const current = document.querySelector('.current-weather')
     const visiblity = document.querySelector('.visibilty')
     const statue = document.querySelector(".statue");
     const city = document.querySelector(".city");
@@ -50,7 +51,8 @@ const updateUi = (data) => {
     like.textContent = ` Feels-like: ${data ["main"] ["feels_like"]} c`;
     humdity.textContent = ` humidity: ${data ["main"] ["humidity"]}`;
     pressure.textContent = `pressure: ${data["main"]["pressure"]}`;
-    visiblity.textContent = `visibilty: ${data['visibility']}`    
+    visiblity.textContent = `visibilty: ${data['visibility']}` 
+    current.textContent = "currentweather"   
 }
 
 function valid () {
