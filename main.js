@@ -4,6 +4,10 @@ console.log("hello world i am ahmed workingn from home ")
 const button = document.querySelector('#submit');
 button.addEventListener("click", e => {
     e.preventDefault();
+    // valid()
+    if(valid()) {
+        return
+    }
     load();
 })
 
@@ -29,6 +33,7 @@ function load () {
 const updateUi = (data) => {
     let d = new Date();
     let newDate = d.getMonth()+ 1 +'.'+ d.getDate()+'.'+ d.getFullYear();
+    const visiblity = document.querySelector('.visibilty')
     const statue = document.querySelector(".statue");
     const city = document.querySelector(".city");
     const date = document.querySelector(".date");
@@ -44,15 +49,17 @@ const updateUi = (data) => {
     minMax.textContent = ` Max: ${Math.round(data["main"]["temp_max"])} `+`min: ${Math.round(data["main"]["temp_max"])}`;
     like.textContent = ` Feels-like: ${data ["main"] ["feels_like"]} c`;
     humdity.textContent = ` humidity: ${data ["main"] ["humidity"]}`;
-    pressure.textContent = `pressure: ${data["main"]["pressure"]}`
-
-
-
-
-
-    
-
-    
+    pressure.textContent = `pressure: ${data["main"]["pressure"]}`;
+    visiblity.textContent = `visibilty: ${data['visibility']}`    
 }
 
+function valid () {
+    const city = document.querySelector("#search")
+    const error = document.querySelector(".error")
+    
+    if(city.validity.valueMissing) {
+        alert("please enter city name ")
+        return true
+    }
+}
 

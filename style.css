@@ -6,7 +6,7 @@
 
 
 body {
-    background-image: url("./pexels-pixabay-209831.jpg");
+    background-image: url("./photo-1516912481808-3406841bd33c.jfif");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -14,54 +14,88 @@ body {
     
 }
 .content {
-    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* margin: auto; */
+    /* border: 2px solid blue; */
+    /* border-radius: 15px; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
-.top-content {
+.form {
+    padding: 30px;
+}
+.city {
+    font-size: 30px;
+    padding: 30px;
+    color: wheat;
+}
+.current-weather{
+    font-size: 30px;
+    padding: 30px;
+    color: wheat;
+}
+.date {
+    font-size: 30px;
+    padding: 30px;
+    color: wheat;
+}
+.weather-info{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70vh;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 50px 0;
 }
-.buttom-content {
+.weather-info div {
+    font-size: 30px;
+    color: bisque;
+}
+
+.info {
+    /* border: 2px solid black; */
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    align-items: center;
-    height: 30vh;
-    width: 100%;
+    gap: 40px;
+    padding: 30px;
+    margin-top: 20px;
+    /* background-color: aqua; */
 }
-form > input {
-    width: 300px;
+.info div {
+    font-size: 30px;
+    color: bisque;
+}
+
+#search {
+    width: 250px;
     height: 30px;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 button {
     padding: 8px 20px;
     border-radius: 10px;
 }
-.left-content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-grow: 0;
-}
 
-.left-content div {
+
+/* .left-content div {
     font-size: 40px;
     margin-left: -20px;
     color: white;
     font-weight: 400;
 
-}
+} */
 .form {
-    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* padding: 50px; */
 }
 
 .right-content div {
@@ -70,10 +104,4 @@ button {
     color: white;
     font-weight: 400;
 
-}
-.right-content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-grow: 0;
 }

@@ -9,29 +9,35 @@
 </head>
 <body>
     <div class="content">
-        <div class="top-content">
-            <div class="left-content">
-                <div class="statue"></div>
-                <div class="city"></div>
-                <div class="date"></div>
-                <div class="temp"></div>
-                <div class="min-max"></div>
-            </div>
-            <div class="form">
-                <form action="" novalidate>
-                    <input type="search" name="search" id="search" placeholder="Enter a location" required>
-                    <button type="submit" id="submit"> Search</button>
-                </form>
-            </div>
-            <div class="right-content">
-                <div class="like"></div>
+        <div class="form">
+            <form action="" novalidate>
+                <input type="search" name="search" id="search" placeholder="search location..." required>
+                <button type="submit" id="submit"> Search</button>
+            </form>
+            <div class="error"></div>
+        </div>
+        <div class="city"></div>
+        <div class="current-weather"> current weather </div>
+        <div class="date"></div>
+        <div class="weather-info"> 
+            <div class="logo"></div>
+            <div class="temp"></div>
+            <div class="statue"></div>
+            <div class="like"></div>
+        </div>
+        <div class="info">
                 <div class="humdity"></div>
                 <div class="pressure"></div>
+                <div class="wind"></div>
+                <div class="visibilty"></div>
+        <div class="top-content">           
+            <div class="left-content">
+                <div class="min-max"></div>
             </div>
         </div>
         
         <div class="buttom-content">
-            buttom content 
+            
         </div>
     </div>
     <script src="main.js" ></script>
